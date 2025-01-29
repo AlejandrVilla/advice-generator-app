@@ -1,0 +1,10 @@
+@use "./scss/base.scss" as base;
+
+#root{
+    background-color: base.$dark-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}

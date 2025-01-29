@@ -1,0 +1,103 @@
+@use "../../scss/base.scss" as base;
+
+.advice{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: base.$dark-grayish-blue;
+    gap: 30px;
+    border-radius: 15px;
+    width: 550px;
+    min-height: 350px;
+    position: relative;
+
+    @media (width <=800px){
+        width: 350px;
+        gap: 10px;
+    }
+}
+
+.advice-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+    width: 550px;
+
+    @media (width <= 800px){
+        width: 350px;
+    }
+}
+
+.advice-id{
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
+    color: base.$neon-green;
+    letter-spacing: 5px;
+    font-size: base.$p-desktop-font-size;
+
+    @media (width <= 800px){
+        font-size: base.$p-mobile-font-size;
+    }
+}
+
+.div-advice-text{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: base.$light-cyan;
+    padding: 0px 45px;
+    text-align: center;
+    font-size: base.$h1-desktop-font-size;
+    overflow-y: auto;
+    min-height: 120px;
+    max-height: 120px;
+
+    @media (width <= 800px){
+        padding: 0px 20px;
+        font-size: base.$h1-mobile-font-size;
+        min-height: 135px;
+        max-height: 135px;
+    }
+}
+
+.advice-text{
+    text-align: center;
+    font-size: base.$h1-desktop-font-size;
+
+    @media (width <= 800px){
+        font-size: base.$h1-mobile-font-size;
+    }
+}
+
+.divider{
+    margin: 20px 0 20px 0;
+}
+
+.div-dice-icon{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: base.$neon-green;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: -30px;
+
+    transition: box-shadow ease 1s;
+}
+
+.div-dice-icon:hover{
+    box-shadow: 0 0 30px base.$neon-green;
+}

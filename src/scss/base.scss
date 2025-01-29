@@ -1,0 +1,18 @@
+@use "./variables/color.scss" as color;
+@use "./variables/layout.scss" as layout;
+@use "./variables/typography.scss" as typography;
+
+@forward "./variables/color.scss";
+@forward "./variables/layout.scss";
+@forward "./variables/typography.scss";
+
+*{
+    box-sizing: border-box;
+    font-family: typography.$font-family;
+    font-optical-sizing: auto;
+}
+
+body{
+    margin: 0;
+    background-color: color.$dark-blue;
+}
